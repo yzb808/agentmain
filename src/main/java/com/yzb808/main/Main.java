@@ -9,8 +9,6 @@ public class Main {
 	private static String jarPath = "E:/eclipse/workSpace/agentmain/target/agentmain-0.0.1.jar";
 
 	public static void main(String[] args) throws Exception {
-		Student student = new Student();
-		System.out.println(student);
 		System.out.println("main begin");
 		String pid = getJVMPid();
 		VirtualMachine vm = VirtualMachine.attach(pid);
@@ -30,23 +28,4 @@ public class Main {
 		}
 		return pid;
 	}
-	
-	private static class Student {
-		private String name;
-		private Integer age;
-		
-		public String getName() {
-			return name;
-		}
-		public void setName(String name) {
-			this.name = name;
-		}
-		public Integer getAge() {
-			return age;
-		}
-		public void setAge(Integer age) {
-			this.age = age;
-		}
-	}
-
 }
