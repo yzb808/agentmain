@@ -4,7 +4,7 @@ import java.lang.management.ManagementFactory;
 
 import com.sun.tools.attach.VirtualMachine;
 
-public class Main {
+public class AgentMain {
 	// 包含agentmain方法的jar包在此处声明，premain方法是在启动时设置javaagent参数声明
 	private static String jarPath = "E:/eclipse/workSpace/agentmain/target/agentmain-0.0.1.jar";
 
