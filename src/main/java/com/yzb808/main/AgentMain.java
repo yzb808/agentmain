@@ -11,7 +11,7 @@ public class AgentMain {
 	public static void main(String[] args) throws Exception {
 		System.out.println("main begin");
 		String pid = getJVMPid();
-		VirtualMachine vm = VirtualMachine.attach(pid);
+		VirtualMachine vm = VirtualMachine.attach(pid);	// ide的jre要依赖一个jdk的版本，否则会抛异常
 		vm.loadAgent(jarPath);
 		System.out.println("main end");
 	}
